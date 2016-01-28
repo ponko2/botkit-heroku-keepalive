@@ -1,0 +1,36 @@
+{
+  "name": "@ponko2/botkit-heroku-keepalive",
+  "description": "Botkit Heroku Keepalive",
+  "version": "0.0.0",
+  "author": "Takahito Nakano",
+  "dependencies": {
+    "request": "^2.69.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-preset-es2015": "^6.5.0",
+    "botkit": "^0.0.7",
+    "eslint": "^2.1.0",
+    "eslint-config-ponko2": "^2.0.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "botkit"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "peerDependencies": {
+    "botkit": "^0.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ponko2/botkit-heroku-keepalive.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps inline",
+    "prepublish": "npm run --if-present build",
+    "watch": "babel src --out-dir lib --watch --source-maps inline"
+  }
+}
