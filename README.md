@@ -3,7 +3,7 @@
 # Installation
 
 ```sh
-npm install botkit-heroku-keepalive --save
+npm install @ponko2/botkit-heroku-keepalive --save
 ```
 
 # Configuring
