@@ -1,7 +1,7 @@
 {
   "name": "@ponko2/botkit-heroku-keepalive",
   "description": "Botkit Heroku Keepalive",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "author": "Takahito Nakano",
   "dependencies": {
     "request": "^2.69.0"
