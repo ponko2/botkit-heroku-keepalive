@@ -23,7 +23,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "peerDependencies": {
-    "botkit": "^0.1.2"
+    "botkit": "^0.2.2"
   },
   "repository": {
     "type": "git",
