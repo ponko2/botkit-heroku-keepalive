@@ -10,22 +10,22 @@ const wakeUpOffset = (60 * wakeUpTime[0] + wakeUpTime[1]) % (60 * 24);
 const awakeMinutes = (60 * (sleepTime[0] + 24) + sleepTime[1] - wakeUpOffset) % (60 * 24);
 
 const keepaliveUrl = (() => {
-  const url = process.env.BOTKIT_HEROKU_KEEPALIVE_URL || process.env.HEROKU_URL;
+const url = process.env.BOTKIT_HEROKU_KEEPALIVE_URL || process.env.HEROKU_URL;
 
-  if (url && !url.match(/\/$/)) {
-    return `${keepaliveUrl}/`;
-  }
+if (url && !url.match(/\/$/)) {
+  return `${keepaliveUrl}/`;
+}
 
-  return url;
+return url;
 })();
 
 const keepaliveInterval = (() => {
-  if (typeof process.env.BOTKIT_HEROKU_KEEPALIVE_INTERVAL !== 'undefined') {
-    return parseFloat(process.env.BOTKIT_HEROKU_KEEPALIVE_INTERVAL);
-  }
+if (typeof process.env.BOTKIT_HEROKU_KEEPALIVE_INTERVAL !== 'undefined') {
+  return parseFloat(process.env.BOTKIT_HEROKU_KEEPALIVE_INTERVAL);
+}
 
-  // Default interval
-  return 5;
+// Default interval
+return 5;
 })();
 
 export default class HerokuKeepalive {
