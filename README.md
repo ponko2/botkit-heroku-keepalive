@@ -1,5 +1,7 @@
 # botkit-heroku-keepalive
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ponko2/botkit-heroku-keepalive.svg)](https://greenkeeper.io/)
+
 [![npm version](https://badge.fury.io/js/%40ponko2%2Fbotkit-heroku-keepalive.svg)](https://badge.fury.io/js/%40ponko2%2Fbotkit-heroku-keepalive)
 [![Build Status](https://travis-ci.org/ponko2/botkit-heroku-keepalive.svg?branch=master)](https://travis-ci.org/ponko2/botkit-heroku-keepalive)
 
